@@ -3,7 +3,7 @@ import axios from "axios"
 
 function Table(){
 
-    const [data, setData] = useState('');
+    const [data, setData] = useState([]);
 
     useEffect(()=>{
         axios.get("https://dummyjson.com/users")
